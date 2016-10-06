@@ -1,0 +1,194 @@
+h1,h2,h3,h4,h5,h6,p,figure,body,header,footer
+{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+}
+
+header, body, footer
+{
+    width: 100%;
+}
+
+/*Barra nav*/
+
+body,html
+{
+  font: 14px 'Roboto', arial, sans-serif;
+}
+
+#barra
+{
+    background-color: black;
+    z-index: 1;
+}
+
+#elementos
+{ 
+  margin: 0 auto; 
+  padding: 0; 
+  list-style: none; 
+  display: table;
+  width: 600px;
+  text-align: center;
+}
+
+.li-nav
+{ 
+  display: table-cell; 
+  position: relative; 
+  padding: 15px 0;
+}
+
+.a-nav
+{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.a-nav:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.a-nav:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+/*Inicio*/
+
+#inicio
+{
+    width: 100%;
+    height: 593px;
+    background-color: red;
+}
+
+/*Articulos*/
+
+.bgd
+{
+    width: 100%;
+    height: 610px;
+    margin: 0px 0;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#bgd-1
+{
+    background-image: url(/imgs/background/1-2.jpg);
+}
+
+#bgd-2
+{
+    background-image: url(/imgs/background/2-2.jpg);
+}
+
+#bgd-3
+{
+    background-image: url(/imgs/background/3-2.jpg);
+}
+
+#bgd-4
+{
+    background-image: url(/imgs/background/4-2.jpg);
+}
+
+.cuerpo-art
+{
+    width: 60%;
+    height: 470px;
+    margin: 20px;
+    padding: 30px;
+    float: right;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.titulo
+{
+    color: white;
+    margin: 5px 0 20px 0;
+    text-transform: uppercase;
+    font: 10px 'Roboto', arial, sans-serif;
+    letter-spacing: 3px;
+    font-size: 2em;
+}
+
+.intro
+{
+    color: white;
+    font: 16px/1.4 'Roboto', arial, sans-serif;
+    text-align: justify;
+}
+
+/*Boton-Ver mas*/
+
+#button-blue{
+	border: 2px solid white;
+	float:left;
+	width: 100%;
+	cursor: pointer;
+	background-color: transparent;
+	color: white;
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.3em;
+	letter-spacing: 1px;
+    padding: 15px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	-ms-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+
+
+
+#button-blue:hover{
+	background-color: rgba(0,0,0,0);
+	color: black;
+}
+
+
+.ease {
+	width: 0px;
+	height: 55px;
+	background-color: white;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-o-transition: .3s ease;
+	-ms-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.btn-container
+{
+    background-color: transparent;  
+    display: inline-block;
+}
+
+
+.btn-container:hover .ease{
+	width: 100%;
+	background-color: white;
+	border: 0;
+}
+
